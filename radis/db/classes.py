@@ -1028,7 +1028,7 @@ class ElectronicState(Isotope):
             eta_e = c.get("eta_e", 0)
 
             # Energies
-            #            Te = c['Te']      # electronic energy
+            Te = self.Te      # electronic energy
             G = Gv(v, we, wexe, weye, weze, weae, webe)  # vibrational energy
             F = Fv(
                 v,
@@ -1049,7 +1049,7 @@ class ElectronicState(Isotope):
             else:
                 ZPE = 0
 
-            E = G + F - ZPE  # cm-1
+            E = Te + G + F - ZPE  # cm-1
 
         except KeyError as err:
             raise KeyError(

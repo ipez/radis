@@ -55,7 +55,7 @@ herzberg_coefficients_rovib = [
 rovibrational energies"""
 
 herzberg_coefficients = (
-    herzberg_coefficients_vib + herzberg_coefficients_rot + herzberg_coefficients_rovib
+   ["Te"] + herzberg_coefficients_vib + herzberg_coefficients_rot + herzberg_coefficients_rovib
 )
 """list: Herzberg coefficients used to calculate rovibrational energies in
 :func:`~radis.levels.dunham.Fv`, :func:`~radis.levels.dunham.Gv`
