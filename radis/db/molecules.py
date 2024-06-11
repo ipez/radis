@@ -40,8 +40,8 @@ CO_B_iso1 = ElectronicState(
     term_symbol="1Σ+",
     spectroscopic_constants="default",
     spectroscopic_constants_type="herzberg",
-    vmax=17,  # max level for Dunham's expansion
-    vmax_morse=48,
+    vmax=5,  # max level for Dunham's expansion
+    # vmax_morse=48,
     Ediss=eV2cm(11.16),
 )
 """CO first isotope (:math:`^{16}O^{12}C`), B1Σ+"""
@@ -52,32 +52,32 @@ CO_A_iso1 = ElectronicState(
     term_symbol="1Π",
     spectroscopic_constants="default",
     spectroscopic_constants_type="herzberg",
-    vmax=17,  # max level for Dunham's expansion
-    vmax_morse=48,
+    vmax=5,  # max level for Dunham's expansion
+    vmax_morse=20,
     Ediss=eV2cm(11.16),
 )
 """CO first isotope (:math:`^{16}O^{12}C`), B1Σ+"""
 CO_b_iso1 = ElectronicState(
     "CO",
     isotope=1,
-    state="b",
+    state="b_",
     term_symbol="3Σ+",
     spectroscopic_constants="default",
     spectroscopic_constants_type="herzberg",
-    vmax=17,  # max level for Dunham's expansion
-    vmax_morse=48,
+    vmax=5,  # max level for Dunham's expansion
+    # vmax_morse=48,
     Ediss=eV2cm(11.16),
 )
 """CO first isotope (:math:`^{16}O^{12}C`), B1Σ+"""
 CO_a_iso1 = ElectronicState(
     "CO",
     isotope=1,
-    state="a",
+    state="a_",
     term_symbol="3Π",
     spectroscopic_constants="default",
     spectroscopic_constants_type="herzberg",
-    vmax=17,  # max level for Dunham's expansion
-    vmax_morse=48,
+    vmax=5,  # max level for Dunham's expansion
+    vmax_morse=20,
     Ediss=eV2cm(11.16),
 )
 """CO first isotope (:math:`^{16}O^{12}C`), B1Σ+"""
@@ -161,8 +161,8 @@ Molecules = {
         1: {"X": CO_X_iso1,
             "B": CO_B_iso1,
             "A": CO_A_iso1,
-            "a": CO_a_iso1,
-            "b": CO_b_iso1,
+            "a_": CO_a_iso1,
+            "b_": CO_b_iso1,
             },
         2: {"X": CO_X_iso2},
         3: {"X": CO_X_iso3}
