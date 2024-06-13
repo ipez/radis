@@ -143,8 +143,8 @@ s.savetxt(filename, 'radiance_noslit', wunit='nm', Iunit='cm-1')
 
 w_nm = s.get_wavelength()
 print(w_nm)
-# s.resample_even()
+s.resample_even()
 # s.resample_even(energy_threshold=1e10)
-s.apply_slit(3, 'nm', shape="gaussian")
+s.apply_slit(30, 'nm', shape="gaussian")
 
 s.plot('radiance')
