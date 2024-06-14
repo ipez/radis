@@ -88,7 +88,7 @@ from itertools import islice
 
 gu = 1
 Ia = .986544E+00
-T = 1000
+T = 3000
 Q = Qf_A.at(T) + Qf_B.at(T)
 Eu = E_values_B[0]
 lines = []
